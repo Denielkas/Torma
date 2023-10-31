@@ -1,0 +1,124 @@
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.conteiner-logo{
+    width: 40vh;
+    height: 10vh;
+    margin-top: 2%;
+    margin-left: 6%;
+}
+
+.btn-group{
+    margin-top: 2.1%;
+    margin-left: 4%;
+}
+
+.btn{
+    background-color: #000000;
+    border: none;
+    
+}
+
+.btn-danger{
+    background-color: #000000;
+    font-size: 30px;
+}
+
+
+.dropdown-menu{
+    background-color: #000000;
+}
+
+
+
+.dropdown-item{
+    color: #ffffff;
+}
+
+.sla7 button.btn.btn-secondary.dropdown-toggle::after{
+    margin-left: 143px;
+}
+
+.sla6 button.btn.btn-secondary.dropdown-toggle::after{
+    margin-left: 55px;
+}
+
+.sla5 button.btn.btn-secondary.dropdown-toggle::after{
+    margin-left: 132px;
+}
+
+.sla4 button.btn.btn-secondary.dropdown-toggle::after{
+    margin-left: 32px;
+}
+
+.sla2 button.btn.btn-secondary.dropdown-toggle::after{
+    margin-left: 123px;
+}
+
+.sla1 button.btn.btn-secondary.dropdown-toggle::after{
+    margin-left: 26px;
+}
+
+.sla8 button.btn.btn-secondary.dropdown-toggle::after{
+    margin-left: 76px;
+}
+
+.sla9 button.btn.btn-secondary.dropdown-toggle::after{
+    margin-left: 85px;
+}
+
+.dropdown{
+    display:contents;
+}
+
+.dropdown-menu{
+    background-color: #000000;
+}
+
+.form-label{
+    color: #ffffff;
+}
+
+.form-check-label{
+    color: #ffffff;
+}
+
+.btn-enter{
+    background-color: #d14d4d;
+}
+
+.img{
+    margin-left: 2%;
+    margin-top: 2.1%;
+    width: 45px;
+    height: 45px;
+}
+
+.hr{
+    width: 100%; 
+    border-top: 2px solid #ffffff;
+    margin-top: 2%;
+}
+
+
+.container {
+    background-color: #222; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+.btn-primary {
+    background-color: #007bff; 
+}
+
+.container {
+    background-color: #222; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+.btn-primary {
+    background-color: #007bff; 
+}
