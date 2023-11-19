@@ -196,6 +196,7 @@ body{
         width: 100px;
         height: 200px;
         position: relative;
+        animation: pulo 0.5s ease-in-out infinite;
         
       }
       
@@ -272,12 +273,17 @@ body{
         /* estilos anteriores... */
         animation: balanco-bracos 2s ease-in-out infinite;
       }
+
+      @keyframes pulo {
+        0%, 100% {
+          transform: translateY(0); /* Posição inicial e final (não pulando) */
+        }
+        50% {
+          transform: translateY(-20px); /* Posição máxima do pulo */
+        }
+      }
       
 }
-
-
-
-
   .enter{
     background-color: red;
   }
