@@ -1,230 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fueltech</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/style.css"/>
-</head>
-<body >
-    <nav>
-        <a href="index.html"><img class="conteiner-logo" src="./img/logo.png"/></a>
-        
-        <!--drop de produtos-->
-        
-        <div class="btn-group">
+  </head>
+    <body >
+      <!--drop de produtos-->
+          
+      <nav class="navbar navbar-expand-lg navbar-black bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="conteiner-logo" src="./img/logo.png"/></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="btn-group">
             <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                 Produtos
             </button>
-            <ul class=" dropdown-menu">
+              <ul class=" dropdown-menu">
                 <div class="btn-group dropend sla7">
-                    <button type="button" class="btn btn-secondary  dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
-                        ECU's          
-                    </button>
+                  <button type="button" class="btn btn-secondary  dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+                      ECU's          
+                  </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Tabela Comparativa de ECUs</a></li>
-                        <li><a class="dropdown-item" href="#">FT700</a></li>
-                        <li><a class="dropdown-item" href="#">FT600</a></li>
-                        <li><a class="dropdown-item" href="#">FT550</a></li>
-                        <li><a class="dropdown-item" href="#">FT550 Lite</a></li>
-                        <li><a class="dropdown-item" href="#">FT450</a></li>
-                        <li><a class="dropdown-item" href="#">FT300</a></li>
+                      <li><a class="dropdown-item" href="#">Tabela Comparativa de ECUs</a></li>
+                      <li><a class="dropdown-item" href="#">FT700</a></li>
+                      <li><a class="dropdown-item" href="#">FT600</a></li>
+                      <li><a class="dropdown-item" href="#">FT550</a></li>
+                      <li><a class="dropdown-item" href="#">FT550 Lite</a></li>
+                      <li><a class="dropdown-item" href="#">FT450</a></li>
+                      <li><a class="dropdown-item" href="#">FT300</a></li>
                     </ul>
-                  </div>
-                  <div class="btn-group dropend sla6">
+                </div>
+                <div class="btn-group dropend sla6">
+                  <button type="button" class="btn btn-secondary  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Injetores &Drivers
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Injetores</a></li>
+                      <li><a class="dropdown-item" href="#">Peak & Hold</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group dropend sla5">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Ignição
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">FTSPARK</a></li>
+                      <li><a class="dropdown-item" href="#">SparkPRO</a></li>
+                      <li><a class="dropdown-item" href="#">Bobinas</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group dropend sla4">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Meters e Dataloggers
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">NanoPRO</a></li>
+                      <li><a class="dropdown-item" href="#">WB-02 NANO</a></li>
+                      <li><a class="dropdown-item" href="#">WB-02 Datalogger</a></li>
+                      <li><a class="dropdown-item" href="#">Digital Air/Fuel Meter</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group dropend">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sensores /Válvulas /Acess
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Sensores e Válvulas</a></li>
+                      <li><a class="dropdown-item" href="#">Conectores e Kits</a></li>
+                      <li><a class="dropdown-item" href="#">Cabos USB e Outros</a></li>
+                      <li><a class="dropdown-item" href="#">Relés</a></li>
+                      <li><a class="dropdown-item" href="#">Câmbios / Manoplas</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group dropend sla2" >
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Volantes
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Volante FTR Aliviado</a></li>
+                      <li><a class="dropdown-item" href="#">Volante FTS-1 FuelTech</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group dropend sla1">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Vestuátio e Acessórios
+                  </button>
+                    <ul class="dropdown-menu item">
+                      <li><a class="dropdown-item" href="#">Moletons</a></li>
+                      <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                      <li><a class="dropdown-item" href="#">Calças e Bermudas</a></li>
+                      <li><a class="dropdown-item" href="#">Bonés</a></li>
+                      <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                      <li><a class="dropdown-item" href="#">Adesivos</a></li>
+                    </ul>
+                </div>
+          </div>
+      
+          <!--drop de suporte-->
+
+          <div class="btn-group">
+            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                Suporte
+            </button>
+              <ul class=" dropdown-menu">
+                <div class="btn-group dropend">
+                    <a href="#">
+                        <button  class="btn btn-secondary">
+                            Software
+                        </button>
+                      </a>   
+                </div>
+                  <div class="btn-group dropend sla8">
                     <button type="button" class="btn btn-secondary  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Injetores &Drivers
+                        Manuais
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Injetores</a></li>
-                        <li><a class="dropdown-item" href="#">Peak & Hold</a></li>
+                        <li><a class="dropdown-item" href="#">Manual Portugues</a></li>
+                        <li><a class="dropdown-item" href="#">Manual Inglês</a></li>
+                        <li><a class="dropdown-item" href="#">Manual Espanhol</a></li>
                     </ul>
                   </div>
-                  <div class="btn-group dropend sla5">
+                  <div class="btn-group dropend sla9">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         Ignição
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">FTSPARK</a></li>
-                        <li><a class="dropdown-item" href="#">SparkPRO</a></li>
-                        <li><a class="dropdown-item" href="#">Bobinas</a></li>
+                        <li><a class="dropdown-item" href="#">Diagramas ECUs</a></li>
+                        <li><a class="dropdown-item" href="#">Diagramas Dicas</a></li>
+                        <li><a class="dropdown-item" href="#">Diagramas Cânbios</a></li>
                     </ul>
                   </div>
-                  <div class="btn-group dropend sla4">
+                  <div class="btn-group dropend sla10">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Meters e Dataloggers
+                        Mapas de Exemplo
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">NanoPRO</a></li>
-                        <li><a class="dropdown-item" href="#">WB-02 NANO</a></li>
-                        <li><a class="dropdown-item" href="#">WB-02 Datalogger</a></li>
-                        <li><a class="dropdown-item" href="#">Digital Air/Fuel Meter</a></li>
+                        <li><a class="dropdown-item" href="#">LINHA POWER FT (450/500/550/600)</a></li>
+                        <li><a class="dropdown-item" href="#">LINHA FT (250/300/350/400) </a></li>
                     </ul>
                   </div>
                   <div class="btn-group dropend">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Sensores /Válvulas /Acess
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Sensores e Válvulas</a></li>
-                        <li><a class="dropdown-item" href="#">Conectores e Kits</a></li>
-                        <li><a class="dropdown-item" href="#">Cabos USB e Outros</a></li>
-                        <li><a class="dropdown-item" href="#">Relés</a></li>
-                        <li><a class="dropdown-item" href="#">Câmbios / Manoplas</a></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group dropend sla2" >
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Volantes
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Volante FTR Aliviado</a></li>
-                        <li><a class="dropdown-item" href="#">Volante FTS-1 FuelTech</a></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group dropend sla1">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Vestuátio e Acessórios
-                    </button>
-                    <ul class="dropdown-menu item">
-                        <li><a class="dropdown-item" href="#">Moletons</a></li>
-                        <li><a class="dropdown-item" href="#">Camisetas</a></li>
-                        <li><a class="dropdown-item" href="#">Calças e Bermudas</a></li>
-                        <li><a class="dropdown-item" href="#">Bonés</a></li>
-                        <li><a class="dropdown-item" href="#">Acessórios</a></li>
-                        <li><a class="dropdown-item" href="#">Adesivos</a></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <!--drop de suporte-->
-
-                <div class="btn-group">
-                    <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                        Suporte
-                    </button>
-                    <ul class=" dropdown-menu">
-                        <div class="btn-group dropend">
-                            <a href="#">
-                                <button  class="btn btn-secondary">
-                                    Software
-                                </button>
-                              </a>   
-                        </div>
-                          <div class="btn-group dropend sla8">
-                            <button type="button" class="btn btn-secondary  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                Manuais
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Manual Portugues</a></li>
-                                <li><a class="dropdown-item" href="#">Manual Inglês</a></li>
-                                <li><a class="dropdown-item" href="#">Manual Espanhol</a></li>
-                            </ul>
-                          </div>
-                          <div class="btn-group dropend sla9">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                Ignição
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Diagramas ECUs</a></li>
-                                <li><a class="dropdown-item" href="#">Diagramas Dicas</a></li>
-                                <li><a class="dropdown-item" href="#">Diagramas Cânbios</a></li>
-                            </ul>
-                          </div>
-                          <div class="btn-group dropend sla10">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                Mapas de Exemplo
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">LINHA POWER FT (450/500/550/600)</a></li>
-                                <li><a class="dropdown-item" href="#">LINHA FT (250/300/350/400) </a></li>
-                            </ul>
-                          </div>
-                          <div class="btn-group dropend">
-                            <a href="#">
-                                <button  class="btn btn-secondary">
-                                    Contato
-                                </button>
-                              </a>   
-                        </div>
-                    </div>
-
-                    <!--FTE-->
-
-                <div class="btn-group">
-                    <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                        FTE
-                    </button>
-                    <ul class=" dropdown-menu">
-                        <div class="btn-group dropend">
-                            <a href="#">
-                                <button  class="btn btn-secondary">
-                                    Sobre a FTE 
-                                </button>
-                              </a>   
-                        </div>
-                        <div class="btn-group dropend">
-                            <a href="#">
-                                <button  class="btn btn-secondary">
-                                    Veículos para Trabalho
-                                </button>
-                              </a>   
-                        </div>
-                        <div class="btn-group dropend">
-                            <a href="#">
-                                <button  class="btn btn-secondary">
-                                    Veículos Esportivos
-                                </button>
-                              </a>   
-                        </div>
-                        <div class="btn-group dropend">
-                            <a href="#">
-                                <button  class="btn btn-secondary">
-                                    Veículos Urbanos e Clássicos
-                                </button>
-                              </a>   
-                        </div>
-                </div>
-
-                <!--Entrar-->
-
-                <div class="btn-group">
-                    <a href="logar.html">
-                        <button  class="btn btn-danger ">
-                            Entrar
+                    <a href="#">
+                        <button  class="btn btn-secondary">
+                            Contato
                         </button>
                       </a>   
                 </div>
+            </div>
 
-                  <a href="#"><img class="img" src="./img/lupa.png"></a>
-                  <a href="#"><img class="img" src="./img/carinho.png"></a>
-                </nav>
-                <div class="hr"></div>
+            <!--FTE-->
 
-                <section>
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./img/carrosel.webp" class="d-block w-100" alt="...">
+        <div class="btn-group">
+            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                FTE
+            </button>
+            <ul class=" dropdown-menu">
+                <div class="btn-group dropend">
+                    <a href="#">
+                        <button  class="btn btn-secondary">
+                            Sobre a FTE 
+                        </button>
+                      </a>   
+                </div>
+                <div class="btn-group dropend">
+                    <a href="#">
+                        <button  class="btn btn-secondary">
+                            Veículos para Trabalho
+                        </button>
+                      </a>   
+                </div>
+                <div class="btn-group dropend">
+                    <a href="#">
+                        <button  class="btn btn-secondary">
+                            Veículos Esportivos
+                        </button>
+                      </a>   
+                </div>
+                <div class="btn-group dropend">
+                    <a href="#">
+                        <button  class="btn btn-secondary">
+                            Veículos Urbanos e Clássicos
+                        </button>
+                      </a>   
+                </div>
+        </div>
+
+        <!--Entrar-->
+
+        <div class="btn-group">
+            <a href="logar.html">
+                <button  class="btn btn-danger ">
+                    Entrar
+                </button>
+              </a>   
+        </div>
+
+          <a href="#"><img class="img" src="./img/lupa.png"></a>
+          <a href="#"><img class="img1" src="./img/carinho.png"></a>
+        </nav>
+        <div class="hr"></div>
+
+                <!--carossel-->
+                  <section>
+                      <div id="carouselExample" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./img/carrosel.webp" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./img/carrosel2.webp" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./img/carrosel3.png" class="d-block w-100" alt="...">
+                            </div>
                           </div>
-                          <div class="carousel-item">
-                            <img src="./img/carrosel2.webp" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/" class="d-block w-100" alt="...">
-                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
+                  </section>
+                  <!--cards-->
+                <section class="card-fundo">
+                  <div class="card-group">
+                    <div class="divson1">
+                      <img src="./img/nanopro.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">NanoPro</h5>
                       </div>
-                </section>
-</body>
-</html>
+                    </div>
+                    <div class="divson2">
+                      <img src="./img/FT300.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">FT300</h5>
+                      </div>
+                    </div>
+                    <div class="divson3">
+                      <img src="./img/450-SITE.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">FT450 SFI</h5>
+                      </div>
+                    </div>
+                  </section>
+  </body>
+  </html>

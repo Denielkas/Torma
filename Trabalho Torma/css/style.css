@@ -1,18 +1,18 @@
 body{
     background-color: #000000;
-    color: #ffffff;
+    color: #ffffff; 
 }
 
 .conteiner-logo{
-    width: 40vh;
-    height: 10vh;
+    width: 18vw;
+    height: 6vw;
     margin-top: 0.8%;
     margin-left: 6%;
 }
 
 .btn-group{
     margin-top: 0.5%;
-    margin-left: 4%;
+    margin-left: 6%;
 }
 
 .btn{
@@ -94,7 +94,14 @@ body{
 }
 
 .img{
-    margin-left: 2%;
+   
+    margin-top: 0.5%;
+    width: 45px;
+    height: 45px;
+}
+
+.img1{
+    
     margin-top: 0.5%;
     width: 45px;
     height: 45px;
@@ -130,4 +137,147 @@ body{
 
 .carousel{
     margin-top: 1%;
+    
 }
+
+
+.card-fundo{
+    margin-top: 2%;
+      
+}
+
+.card-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media  (min-width: 700px){
+    .card-group{
+        width: 80vw;
+        margin-left: 15%;
+    }
+
+    .divson1{
+        margin-right: 6%;
+    }
+
+    .divson2{
+        margin-right: 6%;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 400px)  {
+    .conteiner-logo{
+    width: 40vw;
+    height: 10vw;
+    margin-top: 0.8%;
+    margin-left: 6%;
+    }
+
+    .w-100{
+        height: 50vw;
+    }
+
+    .card-group{
+        width: 60VW;
+        margin-left: 20%;
+        margin-bottom: 6%;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 10%;
+    }
+    /* Estilos para o boneco */
+    .boneco {
+        width: 100px;
+        height: 200px;
+        position: relative;
+        
+      }
+      
+      /* Estilos para as partes do corpo */
+      .cabeca, .corpo, .braco-esquerdo, .braco-direito, .perna-esquerda, .perna-direita {
+        position: absolute;
+        background-color: rgb(255, 0, 0);
+      }
+      
+      .cabeca {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        top: 0;
+        left: 20px;
+      }
+      
+      .corpo {
+        width: 40px;
+        height: 80px;
+        top: 60px;
+        left: 30px;
+      }
+      
+      .braco-esquerdo, .braco-direito {
+        width: 20px;
+        height: 60px;
+        top: 70px;
+      }
+      
+      .braco-esquerdo {
+        left: -20px;
+        transform-origin: top right;
+        transform: rotate(45deg);
+      }
+      
+      .braco-direito {
+        right: -20px;
+        transform-origin: top left;
+        transform: rotate(-45deg);
+      }
+      
+      .perna-esquerda, .perna-direita {
+        width: 20px;
+        height: 70px;
+        top: 140px;
+      }
+      
+      .perna-esquerda {
+        left: 25px;
+      }
+      
+      .perna-direita {
+        right: 25px;
+      }
+      
+      /* Estilos anteriores... */
+    
+    /* Animação para balançar os braços */
+    @keyframes balanco-bracos {
+        0% {
+          transform: rotate(45deg);
+        }
+        50% {
+          transform: rotate(-45deg);
+        }
+        100% {
+          transform: rotate(45deg);
+        }
+      }
+      
+      /* Aplicando a animação nos braços */
+      .braco-esquerdo, .braco-direito {
+        /* estilos anteriores... */
+        animation: balanco-bracos 2s ease-in-out infinite;
+      }
+      
+}
+
+
+
+
+  .enter{
+    background-color: red;
+  }
